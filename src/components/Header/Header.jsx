@@ -79,7 +79,7 @@ const Header = () => {
                         : 'header__menu style={{ zIndex: 0 }}'
                     }
                   >
-                    <div className="qotobosh">
+                    <div className="bg_menu">
                     <a className='menu__link' href={"#services"} onClick={toggleCloseMenu}>
                       Услуги
                     </a>

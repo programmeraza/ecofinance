@@ -1,0 +1,152 @@
+.registr {
+
+    padding: 100px 0;
+    background-color: #00bcda;
+    border-radius: 20px;
+
+    // .registr__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .registr__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    // .registr__text
+
+    &__text {
+        color: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    // .registr__title
+
+    &__title {
+        font-size: clamp(1.25rem, 0.833rem + 2.08vw, 2.5rem);
+        font-weight: 700;
+        color: #fff;
+    }
+
+    // .registr__term
+
+    &__term {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        padding: 20px 0;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    // .registr__term-title
+
+    &__term-title {
+        font-size: 28px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    // .registr__term-flex
+
+    &__term-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+    }
+
+    // .registr__text1
+
+    &__text1 {
+        color: #fff;
+    }
+
+    // .registr__price
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    // .registr__title2
+
+    &__title2 {
+        padding: 30px 0;
+        font-size: clamp(1.125rem, 0.966rem + 0.8vw, 1.563rem);
+        font-weight: 600;
+        color: #fff;
+    }
+
+    // .registr__cards
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    // .registr__card
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        padding: 30px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    // .registr__title-card
+
+    &__title-card {
+        font-size: 28px;
+        font-weight: 600;
+        color:#fff
+    }
+
+    // .registr__text-card
+
+    &__text-card {
+        color: #fff;
+        line-height: 1.7;
+    }
+
+    // .registr__card-flex
+
+    &__card-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+    }
+
+    // .registr__title-card-price
+
+    &__title-card-price {
+        font-size: 25px;
+        color: #fff;
+        font-weight: 600;
+    }
+}

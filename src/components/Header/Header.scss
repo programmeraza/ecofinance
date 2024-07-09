@@ -3,11 +3,11 @@
     top: 0;
     padding: 10px 0;
     width: 100%;
-    background: rgba(13, 11, 19, 0.01);
-    backdrop-filter: blur(5px);
+    background-color: rgba(170, 217, 232, 0.4);
+    backdrop-filter: blur(10px);
     border-radius: 0 0 20px 20px;
 
-    box-shadow: 0px 30px 36px -14px rgba(0,0,0,0.72);
+    box-shadow: 0px 0px 36px 2px rgba(0,0,0,0.3);
 
     &__wrapper {
         display: flex;
@@ -129,7 +129,7 @@
             width: 30px;
             height: 2px;
             background-color: #000;
-            transition: all .4s;
+            transition: 1s;
         }
 
         &.active {
@@ -159,7 +159,7 @@
         right: -100%;
         width: 100%;
         height: 100dvh;
-        background-color: hsla(0, 0%, 43%, .443);
+        opacity: 0;
         z-index: 0;
 
         display: flex;
@@ -178,8 +178,10 @@
 
         &.active {
             right: 0%;
+            transition: 1s ease-in;
             z-index: 9;
-            background-color: hsla(0, 0%, 43%, .443);
+            opacity: 1;
+            background-color: hsla(0, 0%, 43%, .200);
             @media (max-width: 426px) {
                 right: 0%;
             }
@@ -204,13 +206,13 @@
 
 
     &__overlay {
-        right: -100%;
-            opacity: 1;
+            right: 0;
+            opacity: 0;
             visibility: visible;
             width: 100%;
             -webkit-backdrop-filter: blur(13px);
             backdrop-filter: blur(13px);
-            background-color: hsla(0, 0%, 43%, .443);
+            // background-color: transparent;
         &.active {
             right: -100%;
             opacity: 1;
@@ -229,7 +231,7 @@
         justify-content: space-between;
         align-items: start;
         width: 100%;
-        margin-top: 300px;
+        margin-top: 250px;
 
         @media (max-width: 1024px) {
             flex-direction: column;
@@ -250,6 +252,7 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+
   }
 
   .menu {
@@ -273,7 +276,7 @@
     }
 }
 
-.qotobosh{
+.bg_menu{
     width: 50%;
     background: #00bcda;
     position: absolute;

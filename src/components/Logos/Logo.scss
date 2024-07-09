@@ -7,9 +7,10 @@
   }
 
   &__text-blue {
+    width: max-content;
     color: #00bcda;
     font-size: 20px;
-    text-decoration: underline;
+    border-bottom: 1px solid #00bcda;
   }
 
   &__title {
@@ -50,9 +51,7 @@
     &:hover {
       background: #fff;
       color: #00bcda;
-      -webkit-box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 50px 3px rgba(0,0,0,0.1);
     }
 
     @media (max-width: 656px) {
