@@ -1,0 +1,96 @@
+.hero {
+  background-image: url(/vernice.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100dvh;
+  border-bottom: 5px solid #00bcda;
+  @media (max-width: 768px) {
+    height: auto;
+    background-image: none;
+  }
+
+  &__wrapper {
+    padding-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+
+    @media (max-width: 426px) {
+      padding-top: 150px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 750px;
+  }
+
+  &__title {
+    font-size: clamp(1.875rem, 1.458rem + 2.08vw, 3.125rem);
+    color: #000;
+  }
+
+  &__text {
+    font-size: clamp(1rem, 0.917rem + 0.42vw, 1.25rem);
+    color: #000;
+    line-height: 28px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    width: 400px;
+    height: 250px;
+    padding: 20px 30px;
+    border: 1px solid #00bcda;
+    background-color: #00bcda;
+    color: #fff;
+    border-radius: 20px;
+    transition: all 0.8s;
+
+    &:hover {
+      background-color: #fff;
+      color: #00bcda;
+    }
+
+    @media (max-width: 768px) {
+      background: #fff;
+      color: #00bcda;
+    }
+
+    @media (max-width: 1024px) {
+      width: 300px;
+      height: 220px;
+    }
+  }
+
+  &__title-card {
+    font-size: 65px;
+    padding-bottom: 70px;
+    @media (max-width: 1024px) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__text-card {
+    font-size: 19px;
+  }
+}
