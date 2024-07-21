@@ -35,13 +35,16 @@ const Footer = () => {
 
               <div className="footer__card-2">
                 <h3 className="footer__nuber">+998 (97) 777 77 77</h3>
-                <h3 className="footer__nuber">+998 (97) 777 77 77</h3>
+                <h3 className="footer__nuber">+998 (91) 001 06 57</h3>
               </div>
             </div>
 
             <div className="footer__footer">
               <h4 className="footer__footer-text">
                 Политика конфиденциальности
+              </h4>
+              <h4 className='footer__footer-text'>
+                Creat by : <a href="/">Karimberdiyev Aziz</a>
               </h4>
               <h4 className="footer__footer-text">
                 © 2024. Все права защищены
